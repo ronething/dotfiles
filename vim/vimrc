@@ -34,6 +34,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'brooth/far.vim'
 Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 " Plug 'ctrlpvim/ctrlp.vim'
+Plug 'majutsushi/tagbar'
+Plug 'lfv89/vim-interestingwords'
 
 call plug#end()
 
@@ -64,3 +66,5 @@ let g:pymode_lint_checkers = ['pyflakes', 'pep8', 'mccabe', 'pylint']
 let g:pymode_lint_ignore = "E402"
 let g:pymode_options_max_line_length = 120
 
+" tagbar
+nnoremap <leader>t :TagbarToggle<cr>
