@@ -37,6 +37,23 @@ Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 Plug 'majutsushi/tagbar'
 Plug 'lfv89/vim-interestingwords'
 
+" for deoplete
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+
+Plug 'deoplete-plugins/deoplete-jedi'
+
+" format
+Plug 'sbdchd/neoformat'
+
+" lint
+Plug 'w0rp/ale'
+
 call plug#end()
 
 " ctrlp
@@ -68,3 +85,11 @@ let g:pymode_options_max_line_length = 120
 
 " tagbar
 nnoremap <leader>t :TagbarToggle<cr>
+
+" for deoplete
+let g:deoplete#enable_at_startup = 1
+set completeopt-=preview
+
+" neoformat
+let g:neoformat_enabled_python = ['autopep8']
+
