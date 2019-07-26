@@ -1,0 +1,6 @@
+Error running ( ag --nogroup --column --color  'qwer' )
+
+'/home/ronething/.fzf/bin/fzf'  '--ans...lect-all' '--color' 'hl:4,hl+:12' --expect=ctrl-v,ctrl-x,ctrl-t --no-height
+
+> /tmp/nvimjVs6YG/3  
+
