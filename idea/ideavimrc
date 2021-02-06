@@ -1,0 +1,6 @@
+nnoremap ff :action ReformatCode<CR>
+nnoremap gcc :action CommentByLineComment<cr>
+vnoremap gc :action CommentByLineComment<cr>
+vnoremap mu :action VimChangeCaseUpperVisual<cr>
+vnoremap ml :action VimChangeCaseLowerVisual<cr>
+
